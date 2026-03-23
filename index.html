@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王小明 - 高級軟體工程師 - 個人特色介紹</title> <style>
+    <title>李俊靖 Kenneth Lee - 數位多媒體系 - 個人特色介紹</title>
+    <style>
         /* CSS 變量 - LinkedIn 配色方案 */
         :root {
             --linkedin-blue: #0a66c2;
@@ -40,14 +41,14 @@
         /* 主容器 */
         .main-container {
             width: 100%;
-            max-width: 1128px; /* 模擬 LinkedIn 的寬度 */
+            max-width: 1128px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
-        /* 模擬頂部導航欄 (非功能性，僅為外觀) */
+        /* 模擬頂部導航欄 */
         .mock-header {
             background-color: var(--white);
             height: 52px;
@@ -100,29 +101,23 @@
             padding: 24px;
         }
 
-        /* 個人簡介部分 (Top Card) */
+        /* 個人簡介部分 */
         .profile-card {
             display: flex;
             flex-direction: column;
         }
 
-        /* Banner */
         .profile-banner {
-            height: 196px; /* 模擬 LinkedIn Banner 高度 */
-            background-color: var(--linkedin-blue); /* 默認藍色，您可以替換為圖片 */
-            /* 如果您有 Banner 圖片，取消註釋並替換路徑 */
-            /* background-image: url('images/banner.jpg'); */
-            /* background-size: cover; */
-            /* background-position: center; */
+            height: 196px;
+            background-color: var(--linkedin-blue); 
         }
 
-        /* 頭像 (關鍵部分) */
         .profile-pic-container {
             width: 152px;
             height: 152px;
             border-radius: 50%;
             border: 4px solid var(--white);
-            margin-top: -100px; /* 向上移動以覆蓋在 Banner 上 */
+            margin-top: -100px;
             margin-left: 24px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
@@ -134,7 +129,6 @@
             object-fit: cover;
         }
 
-        /* 個人資訊 */
         .profile-info {
             padding: 24px;
             padding-top: 10px;
@@ -190,13 +184,11 @@
             background-color: rgba(10, 102, 194, 0.1);
         }
 
-        /* 關於卡片 */
         .about-card-body {
             font-size: 14px;
             line-height: 1.6;
         }
 
-        /* 經驗卡片 */
         .experience-item, .education-item {
             display: flex;
             gap: 16px;
@@ -207,8 +199,7 @@
             width: 48px;
             height: 48px;
             border-radius: 4px;
-            background-color: #eee; /* 佔位符圖標 */
-            /* 替換為實際公司/學校 Logo 的 `<img>` */
+            background-color: #eee;
         }
 
         .experience-details, .education-details {
@@ -236,7 +227,6 @@
             line-height: 1.6;
         }
 
-        /* 技能卡片 */
         .skills-list {
             display: flex;
             flex-wrap: wrap;
@@ -251,7 +241,6 @@
             font-size: 14px;
         }
 
-        /* 語言卡片 */
         .language-item {
             margin-bottom: 12px;
         }
@@ -266,7 +255,6 @@
             color: var(--linkedin-dark-grey);
         }
 
-        /* 頁腳 */
         .main-footer {
             margin-top: 40px;
             padding: 24px 0;
@@ -277,26 +265,15 @@
             width: 100%;
         }
 
-        /* 響應式設計 */
         @media (max-width: 768px) {
-            .main-container {
-                width: 95%;
-            }
-
-            .profile-banner {
-                height: 120px;
-            }
-
+            .main-container { width: 95%; }
+            .profile-banner { height: 120px; }
             .profile-pic-container {
                 width: 100px;
                 height: 100px;
                 margin-top: -60px;
             }
-
-            .card-header, .card-body {
-                padding: 16px;
-            }
-
+            .card-header, .card-body { padding: 16px; }
             .profile-actions {
                 flex-direction: column;
                 gap: 8px;
@@ -307,7 +284,8 @@
 <body>
 
     <header class="mock-header">
-        <div class="mock-logo">in</div> <nav class="mock-nav">
+        <div class="mock-logo">in</div> 
+        <nav class="mock-nav">
             <div>首頁</div>
             <div>我的網絡</div>
             <div>職缺</div>
@@ -317,19 +295,21 @@
         </nav>
     </header>
 
-    <div class="main-container" style="padding-top: 72px;"> <section class="card profile-card">
-            <div class="profile-banner">
-                </div>
-            
+    <div class="main-container" style="padding-top: 72px;"> 
+        
+        <section class="card profile-card">
+            <div class="profile-banner"></div>
             <div class="profile-pic-container">
-                <img src="images/111.png" alt="王小明的個人相片" class="profile-pic">
+                <img src="images/111.png" alt="李俊靖的個人相片" class="profile-pic">
             </div>
 
             <div class="profile-info">
-                <h1 class="profile-name">李俊靖 (Kenneth Lee)</h1> <p class="profile-headline">黎明技術學院 | 數位多媒體系</p> <p class="profile-contact-info">台灣，台北市 | <a href="mailto:bd1131002@venus.lit.edu.tw">bd1131002@venus.lit.edu.tw</a> | <a href="tel:+8860989874754">(+886) 989-874-754</a> | <a href="#">您的 LinkedIn URL (可選)</a></p>
+                <h1 class="profile-name">李俊靖 (Kenneth Lee)</h1> 
+                <p class="profile-headline">黎明技術學院 | 數位多媒體系</p> 
+                <p class="profile-contact-info">台灣，台北市 | <a href="mailto:bd1131002@venus.lit.edu.tw">bd1131002@venus.lit.edu.tw</a> | <a href="tel:+8860989874754">(+886) 989-874-754</a></p>
                 <div class="profile-actions">
                     <button class="btn btn-primary">與我聯繫</button>
-                    <button class="btn btn-secondary">下載履歷</button>
+                    <button class="btn btn-secondary">下載作品集</button>
                     <button class="btn btn-secondary">查看專案</button>
                 </div>
             </div>
@@ -337,49 +317,45 @@
 
         <section class="card about-card">
             <header class="card-header">
-                <h2 class="card-title">關於</h2>
+                <h2 class="card-title">關於我</h2>
             </header>
             <div class="card-body about-card-body">
-                <p>這是一個示例介紹。我是王小明，一位擁有超過 10 年經驗的高級軟體工程師，專注於全棧開發和雲端原生解決方案。我對構建高性能、可擴展且具有彈性的應用程序充滿熱情。我有豐富的 Python, Go, Java, 和 JavaScript/TypeScript 經驗，並精通 AWS 和 Azure。我也對人工智能和機器學習（特別是 NLP 和大語言模型）感興趣。除了技術能力外，我也熱衷於指導年輕工程師並與跨功能團隊合作，以提供卓越的業務價值。</p>
-                <p>我的核心競爭力包括：雲端架構、微服務、CI/CD、敏捷方法、AI/ML 技術和數據分析。</p>
-                </div>
+                <p>您好！我是李俊靖，目前就讀於黎明技術學院數位多媒體系。我對數位內容創作充滿熱情，擅長將天馬行空的創意轉化為引人入勝的視覺體驗。在學期間，我積極投入各項多媒體專案，領域涵蓋平面設計、影音剪輯、2D/3D動畫以及 UI/UX 介面設計。</p>
+                <p>我相信好的設計不僅要有視覺張力，更要能精準傳達訊息。我習慣在團隊中擔任溝通協調與視覺整合的角色，未來的目標是成為一名全方位的數位多媒體設計師，持續探索新技術，並創造出更具影響力的作品。</p>
+            </div>
         </section>
 
         <section class="card experience-card">
             <header class="card-header">
-                <h2 class="card-title">經驗</h2>
+                <h2 class="card-title">專案與經驗</h2>
             </header>
             <div class="card-body">
                 
                 <div class="experience-item">
-                    <div class="experience-logo">
-                        </div>
+                    <div class="experience-logo"></div>
                     <div class="experience-details">
-                        <h3 class="exp-title">高級軟體工程師 (技術負責人)</h3>
-                        <p class="exp-company">台灣創新科技有限公司 (Taiwan Tech Innovators)</p>
-                        <p class="exp-dates">2018年7月 - 至今 | 5 年 5 個月</p>
+                        <h3 class="exp-title">多媒體設計專案負責人</h3>
+                        <p class="exp-company">校內期末聯合展覽</p>
+                        <p class="exp-dates">2025年9月 - 2026年1月</p>
                         <div class="exp-description">
                             <ul>
-                                <li>領導了一個 12 人的全棧開發團隊，成功交付了 3 個具有 2M+ 用戶的高影響力微服務專案。</li>
-                                <li>設計並實施了基於 AWS 的雲端原生架構，將應用程序延遲降低了 45%，運營成本降低了 30%。</li>
-                                <li>建立並優化了 CI/CD 流程，將代碼部署頻率提高了 10 倍。</li>
-                                <li>與 PM 和 UI/UX 團隊合作，定義產品路線圖並交付高品質的用戶體驗。</li>
-                                <li>指導和培訓了 5 名新工程師。</li>
+                                <li>負責統籌展覽的主視覺設計，包含海報、邀請卡與社群媒體宣傳圖文。</li>
+                                <li>使用 Adobe Premiere 與 After Effects 剪輯並製作 3 分鐘的展覽前導宣傳片。</li>
+                                <li>與團隊成員協作，確保所有視覺產出符合展覽主題與風格指南。</li>
                             </ul>
-                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="experience-item">
-                    <div class="experience-logo">
-                        </div>
+                    <div class="experience-logo"></div>
                     <div class="experience-details">
-                        <h3 class="exp-title">軟體工程師</h3>
-                        <p class="exp-company">全球網絡解決方案公司 (Global Network Solutions)</p>
-                        <p class="exp-dates">2015年6月 - 2018年6月 | 3 年 1 個月</p>
+                        <h3 class="exp-title">UI/UX 設計實習生 (範例)</h3>
+                        <p class="exp-company">某某數位創意工作室</p>
+                        <p class="exp-dates">2024年7月 - 2024年8月</p>
                         <div class="exp-description">
-                            <p>專注於後端開發，使用 Java (Spring Boot) 和 Python (Django)。成功開發並維護了關鍵的計費系統，處理每日 10M+ 筆交易。協助優化了數據庫查詢性能，將系統整體響應時間提高了 20%。</p>
-                            </div>
+                            <p>協助參與一款校園導覽 App 的介面改版。使用 Figma 繪製 Wireframe 與 Prototype，並透過使用者測試收集回饋，優化了 App 的導覽動線，提升了整體的使用者體驗。</p>
+                        </div>
                     </div>
                 </div>
 
@@ -393,16 +369,15 @@
             <div class="card-body">
                 
                 <div class="education-item">
-                    <div class="education-logo">
-                        </div>
+                    <div class="education-logo"></div>
                     <div class="education-details">
-                        <h3 class="edu-title">數位多媒體 (學士)</h3>
-                        <p class="edu-school">黎明技術學院 (LeeMing Institude of Technology)</p>
-                        <p class="edu-dates">2024年9月 - 2028年6月</p>
+                        <h3 class="edu-title">數位多媒體系 (學士)</h3>
+                        <p class="edu-school">黎明技術學院 (Lee-Ming Institute of Technology)</p>
+                        <p class="edu-dates">2024年9月 - 2028年6月 (預計)</p>
                         <div class="edu-description">
-                            <p>專攻：分佈式系統與網絡安全。碩士論文：基於區塊鏈的分佈式身分驗證系統。</p>
-                            <p>社團/活動：台大編程社、台大排球校隊。</p>
-                            </div>
+                            <p>核心課程：色彩學、基礎攝影、進階影音剪輯、2D/3D 電腦動畫設計、UI/UX 介面設計。</p>
+                            <p>社團/活動：多媒體設計研究社、系學會公關組。</p>
+                        </div>
                     </div>
                 </div>
 
@@ -411,56 +386,54 @@
 
         <section class="card skills-card">
             <header class="card-header">
-                <h2 class="card-title">技能</h2>
+                <h2 class="card-title">專業技能</h2>
             </header>
             <div class="card-body">
                 <div class="skills-list">
-                    <span class="skill-item">Python</span>
-                    <span class="skill-item">Java (Spring Boot)</span>
-                    <span class="skill-item">JavaScript / TypeScript</span>
-                    <span class="skill-item">React.js / Node.js</span>
-                    <span class="skill-item">AWS (Certified DevOps Engineer)</span>
-                    <span class="skill-item">Kubernetes / Docker</span>
-                    <span class="skill-item">MySQL / PostgreSQL</span>
-                    <span class="skill-item">Redis</span>
-                    <span class="skill-item">分佈式系統</span>
-                    <span class="skill-item">AI/ML (NLP)</span>
-                    <span class="skill-item">Agile / Scrum</span>
-                    </div>
+                    <span class="skill-item">Adobe Premiere Pro</span>
+                    <span class="skill-item">Adobe After Effects</span>
+                    <span class="skill-item">Adobe Photoshop</span>
+                    <span class="skill-item">Adobe Illustrator</span>
+                    <span class="skill-item">Figma / UI/UX 設計</span>
+                    <span class="skill-item">影片剪輯與後製</span>
+                    <span class="skill-item">基礎 3D 建模 (Maya / Blender)</span>
+                    <span class="skill-item">色彩學與排版設計</span>
+                    <span class="skill-item">團隊協作與溝通</span>
+                </div>
             </div>
         </section>
 
         <section class="card language-card">
             <header class="card-header">
-                <h2 class="card-title">語言</h2>
+                <h2 class="card-title">語言能力</h2>
             </header>
             <div class="card-body">
                 <div class="language-item">
                     <div class="language-name">中文 (Traditional Chinese)</div>
-                    <div class="language-fluency">母語或雙語能力</div>
+                    <div class="language-fluency">母語</div>
                 </div>
                 <div class="language-item">
                     <div class="language-name">英文 (English)</div>
-                    <div class="language-fluency">專業工作能力 (TOEIC: 915)</div>
+                    <div class="language-fluency">基礎溝通與閱讀文件能力</div>
                 </div>
-                </div>
+            </div>
         </section>
 
         <aside style="width: 312px; position: fixed; top: 112px; right: calc(50% - 564px); gap: 20px; display: flex; flex-direction: column;">
             <div class="card" style="padding: 16px;">
                 <h3 style="font-size: 16px; margin-bottom: 12px;">查看更多個人專頁</h3>
-                <a href="#">您的 GitHub ➡️</a><br>
-                <a href="#">您的個人部落格 ➡️</a><br>
-                <a href="#">您的專案集 ➡️</a>
+                <a href="#">我的 Behance 作品集 ➡️</a><br>
+                <a href="#">我的 YouTube 頻道 ➡️</a><br>
+                <a href="#">我的 Instagram (設計帳) ➡️</a>
             </div>
             <div class="card" style="padding: 16px; font-size: 12px; color: var(--linkedin-dark-grey);">
-                © 2023 王小明. 此頁面僅用於專業介紹目的。
+                © 2026 李俊靖. 此頁面僅用於專業介紹目的。
             </div>
         </aside>
 
         <footer class="main-footer">
-            <p>© 2023 王小明 (Xiao-Ming Wang). All rights reserved.</p>
-            <p>由王小明設計和開發，模仿 LinkedIn 風格。</p>
+            <p>© 2026 李俊靖 (Kenneth Lee). All rights reserved.</p>
+            <p>由李俊靖設計和維護。</p>
         </footer>
 
     </div>
